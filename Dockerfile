@@ -1,8 +1,9 @@
 # build stage
-FROM node:lts-alpine as build-stage
+FROM node:16 as build-stage
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
+CMD ["node","src/@iconify/build-icons.js"]
 COPY . .
 RUN npm run build
 
