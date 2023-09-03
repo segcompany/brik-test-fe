@@ -98,7 +98,7 @@ const storeProduct = () => {
                 :items="data.categories"
                 label="Category Name"
                 density="compact"
-                v-model="data.detail.CategoryName"
+                v-model="data.detail.categoryName"
               ></VAutocomplete>
             </VCol>
 
