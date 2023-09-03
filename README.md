@@ -16,6 +16,14 @@ However, if you wish to get actual prop types in `.vue` imports (for example to 
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
+## Setup API
+
+in file /src/plugins/axios.js
+
+change variable  to adjust Backend server
+```sh
+const API = 'http://127.0.0.1:3000'
+```
 ## Project Setup
 
 ```sh

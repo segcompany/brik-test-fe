@@ -2,9 +2,10 @@ import axios from 'axios'
 import { useAuthUserStore } from '../store/auth'
 import router from '@/router'
 
+const API = 'http://127.0.0.1:3000'
 
 const http = axios.create({
-  baseURL: `http://127.0.0.1:3000/api/v1/`,
+  baseURL: `${API}/api/v1/`,
   validateStatus: status=>{
     if(status === 401){
       const auth = useAuthUserStore()
