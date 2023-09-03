@@ -62,7 +62,7 @@ const updateProduct = () => {
                 @input="changeAvatar"
               />
             </VCol>
-            <VCol md="12">
+            <VCol cols="12">
               <VTextarea
                 class="my-10"
                 rows="8"

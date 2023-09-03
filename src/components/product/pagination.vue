@@ -21,11 +21,10 @@ watch(
 </script>
 
 <template>
-  <VRow>
-    <VCol></VCol>
+  <VRow class="align-self-center">
     <VCol
       md="6"
-      sm="12"
+      cols="12"
     >
       <VPagination
         class="my-4"

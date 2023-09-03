@@ -34,7 +34,10 @@ const searchProduct = () => {
 
 <template>
   <VRow justify="space-between">
-    <VCol md="2">
+    <VCol
+      md="2"
+      cols="12"
+    >
       <VSelect
         class="my-3"
         :items="[10, 30, 50, 100]"
@@ -43,7 +46,10 @@ const searchProduct = () => {
         v-model="form.count"
       />
     </VCol>
-    <VCol md="6">
+    <VCol
+      md="6"
+      cols="12"
+    >
       <VTextField
         class="my-3"
         v-model="form.search"
@@ -61,6 +67,7 @@ const searchProduct = () => {
             class="mt-n1"
             @click="searchProduct"
           >
+            <VIcon icon="mdi-search"></VIcon>
             <span
               v-if="$vuetify.display.mdAndUp"
               class="ms-3"
