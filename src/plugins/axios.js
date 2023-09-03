@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useAuthUserStore } from '../store/auth'
 import router from '@/router'
 
-const API = 'http://127.0.0.1:3000'
+const API = 'https://brik-test-be-iaq3qwbymq-uc.a.run.app'
 
 const http = axios.create({
   baseURL: `${API}/api/v1/`,
