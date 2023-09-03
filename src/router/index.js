@@ -4,6 +4,7 @@ import { useAuthUserStore } from '@/store/auth'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
+    { path: '/', redirect: '/dashboard' },
     {
       path: '/',
       component: () => import('../layouts/default.vue'),
