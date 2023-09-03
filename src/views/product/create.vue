@@ -41,9 +41,15 @@ const storeProduct = () => {
   <VCard v-if="data.detail">
     <VCardText>
       <VRow>
-        <VCol md="6">
+        <VCol
+          md="6"
+          cols="12"
+        >
           <VRow align-content="center">
-            <VCol md="6">
+            <VCol
+              md="6"
+              cols="12"
+            >
               <VImg
                 :width="200"
                 aspect-ratio="16/9"
@@ -51,7 +57,10 @@ const storeProduct = () => {
                 :src="data.detail.image"
               ></VImg>
             </VCol>
-            <VCol md="6">
+            <VCol
+              md="6"
+              cols="12"
+            >
               <VBtn @click="refInputEl?.click()">Upload Image</VBtn>
               <input
                 ref="refInputEl"
@@ -72,7 +81,10 @@ const storeProduct = () => {
             </VCol>
           </VRow>
         </VCol>
-        <VCol md="6">
+        <VCol
+          md="6"
+          cols="12"
+        >
           <VRow>
             <VCol cols="12">
               <VTextField
