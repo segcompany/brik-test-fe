@@ -23,7 +23,10 @@ watch(
 <template>
   <VRow>
     <VCol></VCol>
-    <VCol cols="6">
+    <VCol
+      md="6"
+      sm="12"
+    >
       <VPagination
         class="my-4"
         v-model="form.page"
